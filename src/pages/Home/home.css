@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 .container {
     width: 100%;
     text-align: center;
+    font-family: 'Rubik', sans-serif;
 }
 
 h1 {
-    color: #0077ff;
+    color: #67a5ff;
+    margin-bottom: 1em;
 }
 
 h2, h3 {
@@ -37,14 +41,14 @@ h2, h3 {
 }
 
 .datetime {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     align-self: flex-end;
 }
 
 .icons {
     display: block;
-    width: 1.2em;
+    width: 1em;
   }
 
 .icons:hover {
@@ -52,23 +56,13 @@ h2, h3 {
     filter: brightness(1.2);
 }
 
-.linkedin {
-    fill: #0077b5;
-}
-
-.github {
-    fill: #4078c0;
-}
-
 .bar {
     width: 80%;
     max-width: 900px;
     display: flex;
-    /* gap: 0.5em; */
     justify-content: center;
     align-items: center;
-    margin: 2em auto;
-    /* margin-bottom: 1em; */
+    margin: 1em auto;
 }
 
 .bar-inputs {
@@ -97,7 +91,6 @@ h2, h3 {
     position: relative;
     margin: auto;
     width: 100%;
-    /* max-width: 190px; */
     border-radius: 5px;
     overflow: hidden;
   }
@@ -133,7 +126,7 @@ h2, h3 {
     text-align: start;
     color: red;
 }
-  
+
   .inp input {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -142,7 +135,7 @@ h2, h3 {
     border: 0;
     font-family: inherit;
     padding: 16px 12px 0 12px;
-    height: 56px;
+    height: 46px;
     font-size: 16px;
     font-weight: 400;
     background: rgba(0, 0, 0, 0.02);
@@ -174,11 +167,11 @@ h2, h3 {
   .inp input:focus {
     background: rgba(0, 0, 0, 0.05);
     outline: none;
-    box-shadow: inset 0 -2px 0 #0077FF;
+    box-shadow: inset 0 -2px 0 #67a5ff;
   }
   
   .inp input:focus + .label {
-    color: #0077FF;
+    color: #67a5ff;
     transform: translate3d(0, -12px, 0) scale(0.75);
   }
   
@@ -189,94 +182,14 @@ h2, h3 {
 
 
 
-
-
-
-
-
-
-
-
-/*
-
-.form {
-    --width-of-input: 320px;
-    --border-height: 1px;
-    --border-before-color: rgba(221, 221, 221, 0.39);
-    --border-after-color: #5891ff;
-    --input-hovered-color: #4985e01f;
-    position: relative;
-    width: var(--width-of-input);
-   }
-   /* styling of Input */
-
-
-   /*
-
-   .input {
-    color: red;
-    font-size: 0.9rem;
-    background-color: transparent;
-    width: 100%;
-    box-sizing: border-box;
-    padding-inline: 0.5em;
-    padding-block: 0.7em;
-    border: none;
-    border-bottom: var(--border-height) solid var(--border-before-color);
-   }
-
-   .form p {
-       font-size: 14px;
-       padding-inline: .5em;
-       text-align: start;
-       color: red;
-   }
-   
-
-   .input-description {
-       min-height: 4em;
-   }
-   /* styling of animated border */
-
-   /*
-
-   .input-border {
-    position: absolute;
-    background: var(--border-after-color);
-    width: 0%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    transition: 0.3s;
-   }
-   /* Hover on Input */
-
-   /*
-
-   input:hover {
-    background: var(--input-hovered-color);
-   }
-   
-   input:focus {
-    outline: none;
-   }
-   /* here is code of animated border */
-
-   /*
-
-   input:focus ~ .input-border {
-    width: 100%;
-   }
-
-   */
-
 button {
-    
+    max-height: 2em;
     letter-spacing: 2px;
     text-transform: uppercase;
     display: inline-block;
     text-align: center;
     font-weight: bold;
+    font-size: .75em;
     padding: 0.3em 1em;
     border: 2px solid #93C5FF;
     border-radius: 5px;
@@ -326,15 +239,14 @@ button::before {
     display: flex;
     flex-direction: column;
     gap: .5em;
-    /* align-items: center;
-    justify-content: center; */
+    padding-bottom: 2em;
 }
 
 
 .titles {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 2em;
+    margin-bottom: .5em;
 }
 
 .tasks-container-checkboxs {

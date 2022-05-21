@@ -59,25 +59,14 @@ const Home = () => {
                 <div className="date-and-links">
                     <DateTime className='datetime' />
                     <ul>
-                        <li><a href="https://www.linkedin.com/in/adrian-centurion/" target="_blank" rel="noreferrer"><img className="icons github"  src={require("../../assets/svg/linkedin-brands.svg").default}></img></a></li>
-                        <li><a href="https://github.com/adrianmcenturion/REACT-TODO" target="_blank" rel="noreferrer"><img className="icons github"  src={require("../../assets/svg/github-brands.svg").default}></img></a></li>
+                        <li><a href="https://www.linkedin.com/in/adrian-centurion/" target="_blank" rel="noreferrer"><img className="icons github" alt='Github'  src={require("../../assets/svg/linkedin-brands.svg").default}></img></a></li>
+                        <li><a href="https://github.com/adrianmcenturion/REACT-TODO" target="_blank" rel="noreferrer"><img className="icons github" alt='LinkedIn' src={require("../../assets/svg/github-brands.svg").default}></img></a></li>
                     </ul>
                 </div>
                 <div className="bar">
                     <div className="bar-inputs">
-                        {/* <div className="form">
-                            <input className="input" placeholder="Title" required="" onChange={handleTitleChange} type="text" value={titleValue} />
-                            <span className="input-border"></span>
-                            {titleState ? null : <p>Title is needed.</p>}
-                        </div>
-                        <div className="form">
-                            <input className="input input-description" onChange={handleDescriptionChange} type="text" maxLength={150} placeholder="Description" value={descriptionValue} />
-                            <span className="input-border"></span>
-                        </div>
-                            <button className='addButton' onClick={addTask} type="button">Add</button>
-                        </div> */}
                         <label className="inp" htmlFor="inp">
-                            <input placeholder="" id="inp" onChange={handleTitleChange} type="text" value={titleValue} />
+                            <input placeholder="" id="inp" className="input-title" onChange={handleTitleChange} type="text"  maxLength={50} value={titleValue} />
                             <span className="label">Title</span>
                             <span className="focus-bg"></span>
                             {titleState ? null : <p>Title is needed.</p>}
