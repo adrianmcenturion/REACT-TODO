@@ -1,0 +1,120 @@
+.task-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: flex-start */
+}
+
+.task-wrapper[data-isOn="true"] {
+    justify-content: flex-end;
+  }
+
+.tasks {
+    width: 47.5%;
+    /* max-width: 45%;
+    min-width: 45%; */
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    border-radius: 2px;
+    background: skyblue;
+    /* transition: .3s; */
+
+
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 255, .2);
+    /* transition: all .2s; */
+    box-shadow: 5px 5px 7px 1px rgb(196 239 255 / 60%);
+}
+
+
+
+.tasks[data-isOn="true"] {
+    background-color: #AAD9FF;
+}
+
+.tasks-card {
+    /* width: 80%; */
+    width: 100%;
+    max-width: 900px;
+    padding: .5em 0;
+    
+}
+
+.tasks-container-inner {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+.tasks-upperbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tasks-upperbar-title {
+    color: #0077ff;
+}
+
+.tasks-upperbar-title[data-isOn="true"] {
+    text-decoration: line-through;
+}
+
+.tasks-upperbar-buttons {
+    display: flex;
+    gap: 0.3em;
+}
+
+.deleteButton {
+    padding: 0 .5em;
+}
+
+.tasks-description {
+    word-wrap: break-word;
+}
+
+.tasks-description p {
+    text-align: start;
+    width: 100%;
+}
+
+.tasks-description[data-isOn="true"] {
+    text-decoration: line-through;
+}
+
+@media (max-width: 700px) {
+    .tasks {
+        
+        min-width: 160px;
+        max-width:45%;
+        height: max-content;
+        
+    }
+
+    .tasks-upperbar {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    .tasks-upperbar h3 {
+        align-self: flex-start;
+    }
+
+    .tasks-upperbar-buttons {
+        display: flex;
+        /* flex-direction: column-reverse; */
+        align-items: flex-end;
+    }
+
+    .tasks-upperbar-buttons button {
+        width: fit-content;
+        height: 1.5em;
+        font-size: 14px;
+        padding: 0.05em .3em;
+        letter-spacing: 1px;
+    }
+    
+}

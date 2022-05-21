@@ -1,0 +1,384 @@
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #0077ff;
+}
+
+h2, h3 {
+    color: #93C5FF;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+.wrapper h2 {
+    margin: 1em 0; 
+}
+
+.date-and-links {
+    display:flex;
+    gap: 0.5em;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #93C5FF;
+}
+
+.date-and-links ul {
+    display: flex;
+    gap: 0.5em;
+    list-style: none;
+}
+
+.datetime {
+    font-size: 1.2em;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.icons {
+    display: block;
+    width: 1.2em;
+  }
+
+.icons:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+.linkedin {
+    fill: #0077b5;
+}
+
+.github {
+    fill: #4078c0;
+}
+
+.bar {
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    /* gap: 0.5em; */
+    justify-content: center;
+    align-items: center;
+    margin: 2em auto;
+    /* margin-bottom: 1em; */
+}
+
+.bar-inputs {
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em
+}
+
+.bar-inputs h3 {
+    text-align: start;
+}
+
+.bar-input-description {
+    min-height: 3em;
+}
+
+
+
+
+
+
+
+
+.inp {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    /* max-width: 190px; */
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .inp .label {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    transform-origin: 0 0;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+    pointer-events: none;
+  }
+  
+  .inp .focus-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+  .inp p {
+    font-size: 10px;
+    padding-inline: 1.25em;
+    text-align: start;
+    color: red;
+}
+  
+  .inp input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    border: 0;
+    font-family: inherit;
+    padding: 16px 12px 0 12px;
+    height: 56px;
+    font-size: 16px;
+    font-weight: 400;
+    background: rgba(0, 0, 0, 0.02);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+    color: #000;
+    transition: all 0.15s ease;
+  }
+  
+  .inp input:hover {
+    background: rgba(0, 0, 0, 0.04);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  .inp input:not(:-moz-placeholder-shown) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+  }
+  
+  .inp input:not(:-ms-input-placeholder) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+  }
+  
+  .inp input:not(:placeholder-shown) + .label {
+    color: rgba(0, 0, 0, 0.5);
+    transform: translate3d(0, -12px, 0) scale(0.75);
+  }
+  
+  .inp input:focus {
+    background: rgba(0, 0, 0, 0.05);
+    outline: none;
+    box-shadow: inset 0 -2px 0 #0077FF;
+  }
+  
+  .inp input:focus + .label {
+    color: #0077FF;
+    transform: translate3d(0, -12px, 0) scale(0.75);
+  }
+  
+  .inp input:focus + .label + .focus-bg {
+    transform: scaleX(1);
+    transition: all 0.1s ease;
+  }
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+.form {
+    --width-of-input: 320px;
+    --border-height: 1px;
+    --border-before-color: rgba(221, 221, 221, 0.39);
+    --border-after-color: #5891ff;
+    --input-hovered-color: #4985e01f;
+    position: relative;
+    width: var(--width-of-input);
+   }
+   /* styling of Input */
+
+
+   /*
+
+   .input {
+    color: red;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+   }
+
+   .form p {
+       font-size: 14px;
+       padding-inline: .5em;
+       text-align: start;
+       color: red;
+   }
+   
+
+   .input-description {
+       min-height: 4em;
+   }
+   /* styling of animated border */
+
+   /*
+
+   .input-border {
+    position: absolute;
+    background: var(--border-after-color);
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+   }
+   /* Hover on Input */
+
+   /*
+
+   input:hover {
+    background: var(--input-hovered-color);
+   }
+   
+   input:focus {
+    outline: none;
+   }
+   /* here is code of animated border */
+
+   /*
+
+   input:focus ~ .input-border {
+    width: 100%;
+   }
+
+   */
+
+button {
+    
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.3em 1em;
+    border: 2px solid #93C5FF;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #93C5FF;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+button::before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #93C5FF;
+    z-index: -1;
+   }
+
+   button:hover, button:focus {
+    color: white;
+    cursor: pointer;
+   }
+
+   button:hover:before, button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+   }
+
+   button:active {
+    transform: scale(0.9);
+   }
+
+
+
+.tasks-container {
+    width: 100%;
+    margin: 0 auto;
+    margin-top:2em;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+
+.titles {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+.tasks-container-checkboxs {
+    display: flex;
+    gap: .5em;
+    margin-bottom: 2em;
+}
+
+.tasks-container-checkboxs label {
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+    
+
+}
+
+.tasks-container-checkboxs label input {
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+    margin-left: .25em;
+}
+
+@media (max-width: 700px) {
+    .datetime {
+        margin-top: 1em;
+        font-size:1em;
+    }
+}
+
+
+@media (min-width: 1000px) {
+
+    .titles {
+        margin: 0 auto;
+    }
+
+    .titles, .tasks-container {
+        max-width: 900px;
+    }
+
+
+}

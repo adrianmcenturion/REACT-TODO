@@ -1,0 +1,7 @@
+.divider {
+    width: 100%;
+    margin: .2em auto;
+    /* height: 10px; */
+    border-top: 1px solid #93C5FF;
+    box-shadow: 5px 5px 5px 1px rgb(196 239 255 / 40%);
+}
