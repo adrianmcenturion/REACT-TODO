@@ -34,7 +34,7 @@ const Tasks = ({title, description, id, deleteTask, taskStatus}) => {
                             <h3 className="tasks-upperbar-title" data-isOn={isOn}>{title}</h3>
                             <div className="tasks-upperbar-buttons">
                                 {isOn === true ? 
-                                <button onClick={handleDoneButton} type="button" className="" value={isOn}>Undone</button>
+                                <button onClick={handleDoneButton} type="button" className="" value={isOn}>Undo</button>
                                  : 
                                 <button onClick={handleDoneButton} type="button" className="" value={isOn}>Done</button>}
 
