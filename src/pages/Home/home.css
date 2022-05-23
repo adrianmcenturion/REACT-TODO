@@ -17,7 +17,7 @@ h2, h3 {
 
 .wrapper {
     width: 90%;
-    max-width: 900px;
+    max-width: 600px;
     margin: 0 auto;
     margin-top: 2em;
 }
@@ -235,7 +235,7 @@ button::before {
 .tasks-container {
     width: 100%;
     margin: 0 auto;
-    margin-top:2em;
+    margin-top:1em;
     display: flex;
     flex-direction: column;
     gap: .5em;

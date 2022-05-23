@@ -31,8 +31,7 @@
 
 .tasks-card {
     width: 100%;
-    max-width: 900px;
-    padding: .5em 0;
+    padding: .25em 0;
     
 }
 
@@ -110,7 +109,7 @@
 
     .tasks-upperbar-buttons button {
         width: fit-content;
-        height: 1.5em;
+        max-height: 2em;
         font-size: 14px;
         padding: 0.05em .3em;
         letter-spacing: 1px;
